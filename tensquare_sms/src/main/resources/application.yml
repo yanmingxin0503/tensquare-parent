@@ -1,0 +1,24 @@
+server:
+  port: 9009
+spring:
+  application:
+    name: tensquare-sms
+  rabbitmq:
+    host: 192.168.252.134
+#阿里云连接配置
+accessKeyId:
+  LTAIXLtzQlwOCz4y
+sccessKeySecret:
+  uC5evmu6m6Q4WN6GCDmYyX6WyUNR6N
+version:
+  2017-05-25
+signName:
+  铭鑫工作室
+templateCode:
+  SMS_162221370
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+    instance:
+      prefer-ip-address: true #跨域请求

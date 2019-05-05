@@ -1,0 +1,23 @@
+server: 
+  port: 9004
+spring: 
+  application:  
+    name: tensquare-article #指定服务名
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/tensquare_article?characterEncoding=UTF8
+    username: root
+    password: 1234
+  jpa: 
+    database: MySQL
+    show-sql: true
+  data:
+    mongodb:
+      host: 192.168.252.134
+      database: recruitdb
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+    instance:
+      prefer-ip-address: true #跨域请求
